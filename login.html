@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script defer src="./JS/form.js"></script> 
     <title>Kerala Tourism</title>
 
 <style>
@@ -84,37 +85,60 @@
 
 
   <div class="container" style="width: 400px; border: 0.5px solid;background-color: rgb(246, 252, 247); opacity: 75%; padding: 20px; margin-top: 100px;">
-      <form action="destinations.html" onsubmit="return validate()">
+      <form action="#" onsubmit="return enter()">
             <h3 style="text-align: center; font-weight: bold;">Login</h3>
               
           <label for="inputEmail" class="form-label" style="font-weight: 700;">Email</label>
-            <input type="email" class="form-control" id="inputEmail">
+            <input type="email" class="form-control" id="inputEmail" pattern="([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,3})" onkeyup="validemail() ">
+            <label for="error" id="error"></label>
           
           <br>
           
-            <label for="inputPassword" class="form-label" style="font-weight: 700;">Password</label>
-            <input type="password" class="form-control" id="inputPassword">
-            <div class="col-auto">
-              <span id="passwordHelpInline" class="form-text" style="font-weight: 700;">
-                Must be 8-20 characters long.
+            <label for="inputPassword" class="form-label" style="font-weight: 700;" >Password</label>
+            <input type="password" class="form-control" id="inputPassword"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" onkeyup="validpwd()" >
+            <!-- <div id="pwdhelp"  class="col-auto">
+              <span id="passwordHelpInline"   class="form-text" style="font-weight: 700;">
+                Include atleast 1 lowercase,1 uppercase, 1 number and min 8 characters.
               </span>
-         <br>
-         <br>
-          
-            <button type="submit" class="btn btn-primary" style="font-weight: 700;">Sign in</button>
+              <br>
+              <label for="error" id="pwderror"></label>
+            </div> -->
+            <br>
+
+            <div class="progress">
+              <div id="progress-strength" class="progress-bar" role="progressbar"
+                    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+              </div>
+            </div>
+            <br>
+            
+            
+                 <div id="message">
+                    <h6>Password must contain:</h6>
+                    <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                    <p id="capital" class="invalid">A <b>uppercase</b> letter</p>
+                    <p id="number" class="invalid">A <b>number</b></p>
+                    <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                 </div>
+              
+            <button  type="submit" class="btn btn-primary" style="font-weight: 700;" >Sign in</button>
             <br>
             <a href="">Forgot Password</a>
             
             <br>
             <div class="login-misc" style="text-align: center;">
               <br>
-            <h5 style="font-weight: 700;">Create an account</h5>
-            <a href="signup.html" style="font-weight: 700; ">Sign up</a>
+              <h5 style="font-weight: 700;">Create an account</h5>
+              <a href="signup.html" style="font-weight: 700; ">Sign up</a>
+            </div>
       </form> 
+      
+
   </div>  
 
-  <script src="./JS/form.js"></script> 
-        <embed src="./audio/aud-20160829-wa0000-22565.mp3" type="">
+
+  
+        <!-- <embed src="./audio/aud-20160829-wa0000-22565.mp3" type=""> -->
         </body>
         </html>
 

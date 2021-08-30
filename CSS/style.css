@@ -3,3 +3,42 @@
     margin: 0px;
 }
 
+#message{
+    display: none;
+    position: relative;
+    /* border: 1px solid green; */
+    width: fit-content;
+}
+
+.valid{
+    color:green;
+}
+.valid:before {
+
+    position: relative;
+
+    left: -2px;
+
+    content: "✅";
+
+  }
+
+  .invalid {
+
+    color: red;
+
+  }
+
+  .invalid:before {
+
+    position: relative;
+
+    left: -2px;
+
+    content: "❌";
+
+  }
+.progress{
+  height: 10px;
+}
+
