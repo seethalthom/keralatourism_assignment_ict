@@ -1,44 +1,49 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
 }
 
-#message{
+#message {
     display: none;
     position: relative;
     /* border: 1px solid green; */
     width: fit-content;
 }
 
-.valid{
-    color:green;
+.valid {
+    color: green;
 }
+
 .valid:before {
-
     position: relative;
-
     left: -2px;
-
     content: "✅";
-
-  }
-
-  .invalid {
-
-    color: red;
-
-  }
-
-  .invalid:before {
-
-    position: relative;
-
-    left: -2px;
-
-    content: "❌";
-
-  }
-.progress{
-  height: 10px;
 }
 
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -2px;
+    content: "❌";
+}
+
+.progress {
+    height: 20px;
+}
+
+#togglePassword {
+    margin-left: 320px;
+    position: absolute;
+    cursor: pointer;
+    margin-top: -32px;
+}
+
+#togglePassword1 {
+    margin-left: 420px;
+    position: absolute;
+    cursor: pointer;
+    margin-top: -32px;
+}
