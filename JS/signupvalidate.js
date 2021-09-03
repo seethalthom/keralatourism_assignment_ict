@@ -28,11 +28,12 @@ function mail() {
         return false;
     }
 }
-inputPassword1.onkeyup = function pass1() {
+
+function pass1() {
     let pwd = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
-    if (pwd.test(inputPassword1.value.trim()) == false) {
+    if (pwd.test(inputPassword1.value.trim()) == false && inputPassword1.value.trim() == "") {
         // alert("Weak Password");
-        inputPassword1.style.border = "2px solid red";
+        inputPassword1.style.border = "2px solid";
         return false;
     } else {
         inputPassword1.style.border = "2px solid green";
@@ -167,7 +168,7 @@ function mob() {
 
 function validate() {
 
-    if (firstname() && mail() && pass2() && mob()) {
+    if (firstname() && mail() && pass1() && pass2() && mob()) {
         return true;
     } else {
         return false;
