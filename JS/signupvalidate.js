@@ -18,7 +18,7 @@ function firstname() {
 
 
 function mail() {
-    let regexp = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,3})$/;
+    let regexp = /^[^\W_](?:[\w.]*[^\W_])?@(?:\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.|(?:[\w-]+\.)+)(?:[a-zA-Z]{2,3}|[0-9]{1,3})\]?$/;
     if (regexp.test(inputEmail.value) == true) {
         // alert("Invalid email");
         inputEmail.style.border = "2px solid green";

@@ -11,7 +11,7 @@ audio.volume = 0.1;
 
 function validemail() {
 
-    var Regexp = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,3})$/;
+    var Regexp = /^[^\W_](?:[\w.]*[^\W_])?@(?:\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.|(?:[\w-]+\.)+)(?:[a-zA-Z]{2,3}|[0-9]{1,3})\]?$/;
 
     if (Regexp.test(inputEmail.value) && inputEmail.value != "") {
         //  alert("Invalid Email");
