@@ -30,7 +30,7 @@ function mail() {
 }
 inputPassword1.onkeyup = function pass1() {
     let pwd = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
-    if (pwd.test(inputPassword1.value) == false) {
+    if (pwd.test(inputPassword1.value.trim()) == false) {
         // alert("Weak Password");
         inputPassword1.style.border = "2px solid red";
         return false;
@@ -68,7 +68,7 @@ inputPassword1.onkeyup = function() {
     // Validate lowercase letters
     var lowerCaseLetters = /[a-z]/g;
 
-    if (inputPassword1.value.match(lowerCaseLetters)) {
+    if (inputPassword1.value.trim().match(lowerCaseLetters)) {
         letter.classList.remove("invalid");
         letter.classList.add("valid");
         score += 25;
@@ -79,7 +79,7 @@ inputPassword1.onkeyup = function() {
     // Validate capital letters
     var upperCaseLetters = /[A-Z]/g;
 
-    if (inputPassword1.value.match(upperCaseLetters)) {
+    if (inputPassword1.value.trim().match(upperCaseLetters)) {
         capital.classList.remove("invalid");
         capital.classList.add("valid");
         score += 25;
@@ -90,7 +90,7 @@ inputPassword1.onkeyup = function() {
 
     // Validate numbers
     var numbers = /[0-9]/g;
-    if (inputPassword1.value.match(numbers)) {
+    if (inputPassword1.value.trim().match(numbers)) {
 
         number.classList.remove("invalid");
         number.classList.add("valid");
@@ -101,7 +101,7 @@ inputPassword1.onkeyup = function() {
     }
 
     // Validate length
-    if (inputPassword1.value.length >= 8) {
+    if (inputPassword1.value.trim().length >= 8) {
 
         length.classList.remove("invalid");
         length.classList.add("valid");
@@ -143,7 +143,7 @@ inputPassword1.onkeyup = function() {
 
 function pass2() {
     let pwd = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
-    if (inputPassword1.value == inputPassword2.value) {
+    if (inputPassword1.value.trim() == inputPassword2.value.trim()) {
         inputPassword2.style.border = "2px solid green";
         return true;
 

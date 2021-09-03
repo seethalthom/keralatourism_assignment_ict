@@ -93,13 +93,13 @@
             <h3 style="text-align: center; font-weight: bold;">Login</h3>
 
             <label for="inputEmail" class="form-label" style="font-weight: 700;">Email</label>
-            <input type="email" class="form-control" id="inputEmail" pattern="([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,3})" onkeyup="validemail() ">
+            <input type="type" class="form-control" id="inputEmail" pattern="([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,3})" onkeyup="validemail() ">
             <label for="error" id="error"></label>
 
             <br>
 
             <label for="inputPassword" class="form-label" style="font-weight: 700;">Password</label>
-            <input type="password" class="form-control" id="inputPassword" onkeyup="return pass()">
+            <input type="password" class="form-control" id="inputPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,})" onkeyup="pass()">
             <i class="bi bi-eye-slash" id="togglePassword"></i>
             <label for="error" id="pwerror"></label>
             <!-- <small class="help-block" id="passwordtext"></small> -->
@@ -143,9 +143,9 @@
 
     </div>
 
+    <audio autoplay id="myaudio" src="./audio/aud-20160829-wa0000-22565.mp3"></audio>
 
-
-    <!-- <embed src="./audio/aud-20160829-wa0000-22565.mp3" type=""> -->
+    <!-- <audio src="./audio/aud-20160829-wa0000-22565.mp3" type=""> -->
 </body>
 
 </html>

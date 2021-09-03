@@ -1,99 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    
+    <script defer src="./JS/audio.js"></script>
     <link rel="stylesheet" href="CSS/style.css">
     <title>Kerala Tourism</title>
-   
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
     <style>
-      img:hover {
-        transform: scaleX(-1);
-      }
-      embed{
-        visibility: hidden;
-        height: 2px;
-      }
-      #bottom-left {
-      position: absolute;
-      bottom: 350px;
-      left: 50px;
-      color: rgb(252, 250, 250);
-      font-size: 5vw;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      }
- 
-
-a:hover {
-  background-color: #ddd;
-  color: black;
-  
-}
-
-.previous {
-  background-color: #f1f1f1;
-  color: black;
-  text-decoration: none;
-  display: inline-block;
-  padding: 8px 16px;
-}
-.responsive {
-  width: 100%;
-  height: auto;
-}
-.next {
-  background-color: #f1f1f1;
-  color: black;
-  text-decoration: none;
-  display: inline-block;
-  padding: 8px 16px;
-}
-      </style>
+        img:hover {
+            transform: scaleX(-1);
+        }
+        
+        embed {
+            visibility: hidden;
+            height: 2px;
+        }
+        
+        #bottom-left {
+            position: absolute;
+            bottom: 350px;
+            left: 50px;
+            color: rgb(252, 250, 250);
+            font-size: 5vw;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        .previous {
+            background-color: #f1f1f1;
+            color: black;
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 16px;
+        }
+        
+        .responsive {
+            width: 100%;
+            height: auto;
+        }
+        
+        .next {
+            background-color: #f1f1f1;
+            color: black;
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 16px;
+        }
+    </style>
 </head>
+
 <body>
     <!-- nav bar starts -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid">
-          <img src="./Images/logo.jpg" alt="">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="./Images/logo.jpg" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="destinations.html">Destinations</a>
-              </li>
-
-              
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinations.html">Destinations</a>
+                    </li>
 
 
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">Explore Kerala</a>
-                  
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="#">About Kerala</a></li>
-                  <li><a class="dropdown-item" href="#">Traditions and Cultures</a></li>
-                  <li><a class="dropdown-item" href="#">Curators</a></li>
-                  <li><a class="dropdown-item" href="#">Adventures</a></li>
-                  <li><a class="dropdown-item" href="#">Current Events</a></li>
-                  
-
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Testimonials</a></li>
-                </ul>
-              </li>
 
 
-              <!-- <li class="nav-item dropdown">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Explore Kerala</a>
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">About Kerala</a></li>
+                            <li><a class="dropdown-item" href="#">Traditions and Cultures</a></li>
+                            <li><a class="dropdown-item" href="#">Curators</a></li>
+                            <li><a class="dropdown-item" href="#">Adventures</a></li>
+                            <li><a class="dropdown-item" href="#">Current Events</a></li>
+
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                        </ul>
+                    </li>
+
+
+                    <!-- <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Dropdown
                 </a>
@@ -104,173 +110,174 @@ a:hover {
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
               </li> -->
-              <li class="nav-item nav-fill" >
-                <a class="nav-link" href="login.html" tabindex="-1" aria-disabled="true">LOGIN</a>
-              </li>
-              
+                    <li class="nav-item nav-fill">
+                        <a class="nav-link" href="login.html" tabindex="-1" aria-disabled="true">LOGIN</a>
+                    </li>
 
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
         </div>
-      </nav> 
-      <!-- nav bar ends -->
+    </nav>
+    <!-- nav bar ends -->
 
-      <div class="container-fluid">
+    <div class="container-fluid">
         <img src="./Images/kanur land.jpg" alt="" class="responsive" style="min-height: 50vh;">
         <div id="bottom-left" class="container">
-          <div class="row">
-              <!-- <div class="col-sm-12">
+            <div class="row">
+                <!-- <div class="col-sm-12">
                 KANNUR
               </div> -->
-          </div>
+            </div>
         </div>
-      </div>
+    </div>
 
-      <div id="prenex"  class="container-fluid ">
+    <div id="prenex" class="container-fluid ">
         <a href="wayanad.html" class="previous">&laquo; Previous</a>
         <a href="kasargod.html" class="next" style="float: right;">Next &raquo; </a>
 
-      </div>
+    </div>
     </div>
     <div class="container-fluid">
-      <h2 style="text-align: center;">KANNUR</h2>
+        <h2 style="text-align: center;">KANNUR</h2>
 
-    </div> 
-<div class="container" style="margin-top: 50px;">
-      <h1>We help you to plan your Trip with us</h1>
-      
-</div>
-
-<div class="container" >
-  <h2 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-style: italic;">Things to do in Kannur</h2>
-  <br>
-  <div class="row row-cols-1 row-cols-xl-4 g-4" style="margin-bottom: 50px;">
-    <div class="col">
-      <div class="card h-100 shadow">
-        <img src="./Images/Payyambalam_Beach.jpg" class="card-img-top" alt="..." style="height: 200px;" >
-        <div class="card-body">
-          <h5 class="card-title">Payyabalam Beach</h5>
-          <p class="card-text">Payyambalam beach is a beautiful spot located in the district of Kannur. It is one among the five beaches that is collectively known as Kannur beach.</p>
-        </div>
-      </div>
     </div>
-    <div class="col">
-      <div class="card h-100 shadow">
-        <img src="./Images/st angelo.jpg" class="card-img-top" alt="..." style="height: 200px;">
-        <div class="card-body">
-          <h5 class="card-title">St. Angelo's Fort</h5>
-          <p class="card-text">St. Angelo's Fort, popularly known as the Kannur Fort, is a massive triangular laterite fort and is among the most historic sites in Kannur.</p>
-        </div>
-      </div>
+    <div class="container" style="margin-top: 50px;">
+        <h1>We help you to plan your Trip with us</h1>
+
     </div>
-    <div class="col">
-      <div class="card h-100 shadow">
-        <img src="./Images/kannur_Lighthouse.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Kannur lighthouse</h5>
-          <p class="card-text">The Kannur lighthouse is on the cliff next to Payamabalam beach, by the entrance of KTDC resort. The light house is not that tall however gives a beautiful view.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100 shadow">
-        <img src="./Images/muzhapilangadu.jpg" class="card-img-top" alt="..." style="height: 200px;">
-        <div class="card-body">
-          <h5 class="card-title">Muzhappilangad Beach</h5>
-          <p class="card-text">Muzhappilangad Beach is Kerala's only drive-in beach. This enchanting beach located in Kannur district allures tourists with its comfortable swimming.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
-<div class="d-grid gap-2 col-6 mx-auto justify-content-md-center">
-  <button class="btn btn-primary" type="button">Explore More</button>
- 
-</div>
-
-<div class="container" style="margin-top: 20px;">
-  <p>Kannur is a coastal city in the south Indian state of Kerala. It was once an ancient trading port. Enduring monuments such as 16th-century St. Angelo Fort, once occupied by European colonial forces, show the city’s significant role in the spice trade. Housed in a former palace, the Arakkal Museum highlights Kerala's one Muslim royal family. The palm-fringed sands of Payyambalam Beach run along Kannur’s western shore. </p>
-
-</div>
-
-<div class="container" style="padding: 20px;margin-bottom: 5px;">
-
-  <h3 style="font-style: italic;">Find a range of information from basic customs to hotels, restaurants,transport and discounts.</h3>
-</div>
-
-<div class="container" style="padding: 20px; margin-top: 5px;">
-      <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col">
-          <div class="card shadow-lg">
-            <img src="./Images/resorts.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Hotels</h5>
-              <p class="card-text">Five-star Resort or Hotel? <br>Pick from an incredible range of options.</p>
-              <a href="#">Plan your trip</a>
+    <div class="container">
+        <h2 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-style: italic;">Things to do in Kannur</h2>
+        <br>
+        <div class="row row-cols-1 row-cols-xl-4 g-4" style="margin-bottom: 50px;">
+            <div class="col">
+                <div class="card h-100 shadow">
+                    <img src="./Images/Payyambalam_Beach.jpg" class="card-img-top" alt="..." style="height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Payyabalam Beach</h5>
+                        <p class="card-text">Payyambalam beach is a beautiful spot located in the district of Kannur. It is one among the five beaches that is collectively known as Kannur beach.</p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-lg">
-            <img src="./Images/transport.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Touchdown to Take-off</h5>
-              <p class="card-text">Getting to and around Kannur is easy with us. <br> We provide world-class facilities.</p>
-              <a href="#">Plan your trip</a>
+            <div class="col">
+                <div class="card h-100 shadow">
+                    <img src="./Images/st angelo.jpg" class="card-img-top" alt="..." style="height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">St. Angelo's Fort</h5>
+                        <p class="card-text">St. Angelo's Fort, popularly known as the Kannur Fort, is a massive triangular laterite fort and is among the most historic sites in Kannur.</p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-lg">
-            <img src="./Images/restaurants.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Eat & Drink</h5>
-              <p class="card-text">From Streets food to fine dining. <br> Get ready for the flavours of Kerala</p>
-              <a href="#">Plan your trip</a>
+            <div class="col">
+                <div class="card h-100 shadow">
+                    <img src="./Images/kannur_Lighthouse.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Kannur lighthouse</h5>
+                        <p class="card-text">The Kannur lighthouse is on the cliff next to Payamabalam beach, by the entrance of KTDC resort. The light house is not that tall however gives a beautiful view.</p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-lg">
-            <img src="./Images/kannur spot.jpg" class="card-img-top"  alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Sights & Attractions</h5>
-              <p class="card-text">Discover iconic landmarks. <br>Find your perfect destination to experience the unknown.  </p>
-              <a href="#">Plan your trip</a>
+            <div class="col">
+                <div class="card h-100 shadow">
+                    <img src="./Images/muzhapilangadu.jpg" class="card-img-top" alt="..." style="height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Muzhappilangad Beach</h5>
+                        <p class="card-text">Muzhappilangad Beach is Kerala's only drive-in beach. This enchanting beach located in Kannur district allures tourists with its comfortable swimming.</p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
 
-<div class="container" style="margin-bottom: 20px;">
-    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-      <button class="btn btn-primary me-md-2" type="button">Book Now</button>
-      <button class="btn btn-primary" type="button">More Info</button>
+    <div class="d-grid gap-2 col-6 mx-auto justify-content-md-center">
+        <button class="btn btn-primary" type="button">Explore More</button>
+
     </div>
-</div>
-<embed src="./audio/aud-20160829-wa0000-22565.mp3" type="">
-  <footer style="text-align: center; background-color: cornsilk; padding: 20px;">
-    <!-- <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div> -->
-    <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">  Customer care: <a href="">support@keraltourism.com</a> </p>
-    <ul class="list-inline">
-        <li class="list-inline-item"><a href="#">Home</a></li>
-        <li class="list-inline-item"><a href="#">Services</a></li>
-        <li class="list-inline-item"><a href="#">About</a></li>
-        <li class="list-inline-item"><a href="#">Terms</a></li>
-        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-    </ul>
-    
-    <div class="list-inline-item"><i class="fab fa-facebook-square"></i></div>
-    <div class="list-inline-item"><i class="fab fa-twitter-square"></i></div>
-    <div class="list-inline-item"><i class="fab fa-google-plus-square"></i></div>
-    <p class="copyright">Kerala Tourism © 2021</p>  
-  </footer>
+
+    <div class="container" style="margin-top: 20px;">
+        <p>Kannur is a coastal city in the south Indian state of Kerala. It was once an ancient trading port. Enduring monuments such as 16th-century St. Angelo Fort, once occupied by European colonial forces, show the city’s significant role in the spice
+            trade. Housed in a former palace, the Arakkal Museum highlights Kerala's one Muslim royal family. The palm-fringed sands of Payyambalam Beach run along Kannur’s western shore. </p>
+
+    </div>
+
+    <div class="container" style="padding: 20px;margin-bottom: 5px;">
+
+        <h3 style="font-style: italic;">Find a range of information from basic customs to hotels, restaurants,transport and discounts.</h3>
+    </div>
+
+    <div class="container" style="padding: 20px; margin-top: 5px;">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card shadow-lg">
+                    <img src="./Images/resorts.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotels</h5>
+                        <p class="card-text">Five-star Resort or Hotel? <br>Pick from an incredible range of options.</p>
+                        <a href="#">Plan your trip</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg">
+                    <img src="./Images/transport.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Touchdown to Take-off</h5>
+                        <p class="card-text">Getting to and around Kannur is easy with us. <br> We provide world-class facilities.</p>
+                        <a href="#">Plan your trip</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg">
+                    <img src="./Images/restaurants.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Eat & Drink</h5>
+                        <p class="card-text">From Streets food to fine dining. <br> Get ready for the flavours of Kerala</p>
+                        <a href="#">Plan your trip</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg">
+                    <img src="./Images/kannur spot.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sights & Attractions</h5>
+                        <p class="card-text">Discover iconic landmarks. <br>Find your perfect destination to experience the unknown. </p>
+                        <a href="#">Plan your trip</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="margin-bottom: 20px;">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+            <button class="btn btn-primary me-md-2" type="button">Book Now</button>
+            <button class="btn btn-primary" type="button">More Info</button>
+        </div>
+    </div>
+    <audio autoplay id="myaudio" src="./audio/aud-20160829-wa0000-22565.mp3"></audio>
+    <footer style="text-align: center; background-color: cornsilk; padding: 20px;">
+        <!-- <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div> -->
+        <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> Customer care: <a href="">support@keraltourism.com</a> </p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Home</a></li>
+            <li class="list-inline-item"><a href="#">Services</a></li>
+            <li class="list-inline-item"><a href="#">About</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+        </ul>
+
+        <div class="list-inline-item"><i class="fab fa-facebook-square"></i></div>
+        <div class="list-inline-item"><i class="fab fa-twitter-square"></i></div>
+        <div class="list-inline-item"><i class="fab fa-google-plus-square"></i></div>
+        <p class="copyright">Kerala Tourism © 2021</p>
+    </footer>
 </body>
+
 </html>
-    

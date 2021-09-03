@@ -5,7 +5,9 @@ let pwerror = document.getElementById("pwerror");
 // let passwordStrength = document.getElementById("progress-strength");
 var strength = document.getElementById("progress-strength");
 const togglePassword = document.querySelector('#togglePassword');
+var audio = document.getElementById("myaudio");
 
+audio.volume = 0.1;
 
 function validemail() {
 
@@ -16,7 +18,7 @@ function validemail() {
         inputEmail.style.border = "2px solid green";
         error.innerHTML = "";
         // inputEmail.style.backgroundColor ="green";
-        return true
+        return true;
 
 
     } else {
@@ -26,16 +28,21 @@ function validemail() {
         return false;
     }
 }
+var pwd = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
 
 function pass() {
-    if (inputPassword.value == 0) {
-        inputPassword.style.border = "2px solid green";
-        pwerror.innerHTML = "Please enter your password"
-        return false;
-    } else {
+    if (pwd.test(inputPassword.value) && inputPassword.value != "") {
+        inputPassword.style.border = " ";
+        pwerror.innerHTML = "";
         return true;
+    } else {
+        inputPassword.style.border = "1px solid red ";
+        pwerror.innerHTML = "Incorrect Password";
+        pwerror.style.color = "red";
+        return false;
     }
 }
+
 
 
 togglePassword.addEventListener('click', function(e) {

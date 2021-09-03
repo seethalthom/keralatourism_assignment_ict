@@ -1,70 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+
     <title>Kerala Tourism</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    
+    <script defer src="./JS/audio.js"></script>
     <style>
-      embed{
-        visibility: hidden;
-        height: 2px;
-      }
-
-      img:hover {
-        transform: scaleX(-1);
-      }
-
-      #distbox{
-        text-align: center;
-        justify-content: center;
-      }
+        embed {
+            visibility: hidden;
+            height: 2px;
+        }
+        
+        img:hover {
+            transform: scaleX(-1);
+        }
+        
+        #distbox {
+            text-align: center;
+            justify-content: center;
+        }
     </style>
 </head>
+
 <body>
     <!-- nav bar starts -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid">
-          <img src="./Images/logo.jpg" alt="">
-          <!-- <a class="navbar-brand" href="#" style="font-weight: bold;">GODS OWN COUNTRY</a> -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="./Images/logo.jpg" alt="">
+            <!-- <a class="navbar-brand" href="#" style="font-weight: bold;">GODS OWN COUNTRY</a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="destinations.html">Destinations</a>
-              </li>
-
-              
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="destinations.html">Destinations</a>
+                    </li>
 
 
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">Explore Kerala</a>
-                  
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="#">About Kerala</a></li>
-                  <li><a class="dropdown-item" href="#">Traditions and Cultures</a></li>
-                  <li><a class="dropdown-item" href="#">Curators</a></li>
-                  <li><a class="dropdown-item" href="#">Adventures</a></li>
-                  <li><a class="dropdown-item" href="#">Current Events</a></li>
-                  
 
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Testimonials</a></li>
-                </ul>
-              </li>
 
-              <!-- <li class="nav-item dropdown">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Explore Kerala</a>
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">About Kerala</a></li>
+                            <li><a class="dropdown-item" href="#">Traditions and Cultures</a></li>
+                            <li><a class="dropdown-item" href="#">Curators</a></li>
+                            <li><a class="dropdown-item" href="#">Adventures</a></li>
+                            <li><a class="dropdown-item" href="#">Current Events</a></li>
+
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Dropdown
                 </a>
@@ -75,158 +79,159 @@
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
               </li> -->
-              <li class="nav-item nav-fill" >
-                <a class="nav-link" href="login.html" tabindex="-1" aria-disabled="true">LOGIN</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
+                    <li class="nav-item nav-fill">
+                        <a class="nav-link" href="login.html" tabindex="-1" aria-disabled="true">LOGIN</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
         </div>
-      </nav> 
+    </nav>
 
-      <!-- nav bar ends -->
-<div class="container" style="padding: 20px; margin-top: 100px;">
-    <h3 style="text-align: center;color: #068b3d;">Get ready for the expeditions to the awesome destinations in Kerala</h3>
-</div>
-    <div id="distbox" class="container" >
+    <!-- nav bar ends -->
+    <div class="container" style="padding: 20px; margin-top: 100px;">
+        <h3 style="text-align: center;color: #068b3d;">Get ready for the expeditions to the awesome destinations in Kerala</h3>
+    </div>
+    <div id="distbox" class="container">
         <!-- 1st row -->
-          <div class="row">
-            <div class="col col-lg-3" style="margin-bottom: 20px;"> 
-              <a href="trivandrum.html"><img src="./Images/trivandrum1.jpg" alt=""></a>
-              <h4>TRIVANDRUM</h4>
-              <h4>The Evergreen City</h4>
-              <a href="kollam.html">Explore Here</a>
-              
+        <div class="row">
+            <div class="col col-lg-3" style="margin-bottom: 20px;">
+                <a href="trivandrum.html"><img src="./Images/trivandrum1.jpg" alt=""></a>
+                <h4>TRIVANDRUM</h4>
+                <h4>The Evergreen City</h4>
+                <a href="kollam.html">Explore Here</a>
+
             </div>
             <div class="col col-lg-3" style="margin-bottom: 20px;">
-              <a href="kollam.html"><img src="./Images/kollam.jpg" alt=""></a>
+                <a href="kollam.html"><img src="./Images/kollam.jpg" alt=""></a>
                 <h4>KOLLAM</h4>
                 <h4>The Cashew Capital</h4>
                 <a href="kollam.html">Explore Here</a>
-                
-              </div>
+
+            </div>
             <div class="col col-lg-3" style="margin-bottom: 20px;">
-              <a href="alapuzha.html"><img src="./Images/alapuza.jpg" alt=""></a>
+                <a href="alapuzha.html"><img src="./Images/alapuza.jpg" alt=""></a>
                 <h4>ALAPPUZA</h4>
                 <h4>The Backwaters Site</h4>
                 <a href="alapuzha.html">Explore Here</a>
-                
+
             </div>
             <div class="col col-lg-3" style="margin-bottom: 20px;">
-              <a href="pathanamthitta.html"> <img src="./Images/pathanmthitta.png" alt=""></a>
+                <a href="pathanamthitta.html"> <img src="./Images/pathanmthitta.png" alt=""></a>
                 <h4>PATHANAMTHITTA</h2>
-                <h4>The Pilgrimage Center</h4>
-                <a href="pathanamthitta.html">Explore Here</a>
-                
+                    <h4>The Pilgrimage Center</h4>
+                    <a href="pathanamthitta.html">Explore Here</a>
+
             </div>
-          </div>
-<!-- 1st row ends -->
+        </div>
+        <!-- 1st row ends -->
 
-<div class="row">
-    <div class="col col-lg-3" style="margin-bottom: 20px;">
-      <a href="kottayam.html"> <img src="./Images/kottayam.jpg" alt=""></a>
-      <h4>KOTTAYAM</h4>
-      <h4>The City of Letters</h4>
-      <a href="kottayam.html">Explore Here</a>
-      
-    </div>
-    <div class="col col-lg-3" style="margin-bottom: 20px;">
-      <a href="idukki.html">  <img src="./Images/idukki.jpg" alt=""></a>
-        <h4>IDUKKI</h4>
-        <h4>The Spice Garden</h4>
-        <a href="idukki.html">Explore Here</a>
-        
-      </div>
-    <div class="col col-lg-3" style="margin-bottom: 20px;">
-      <a href="ernakulam.html"><img src="./Images/ernakulam.jpg" alt=""></a>
-        <h4>ERNAKULAM</h4>
-        <h4>The Commercial Capital</h4>
-        <a href="ernakulam.html">Explore Here</a>
-        
-    </div>
-    <div class="col col-lg-3" style="margin-bottom: 20px;">
-      <a href="thrissur.html"><img src="./Images/Thrissur.jpg" alt=""></a>
-        <h4>THRISSUR</h4>
-        <h4>The Cultural Capital</h4>
-        <a href="thrissur.html">Explore Here</a>
-        
-    </div>
-  </div>
-          
-<!-- 3 row starts -->
+        <div class="row">
+            <div class="col col-lg-3" style="margin-bottom: 20px;">
+                <a href="kottayam.html"> <img src="./Images/kottayam.jpg" alt=""></a>
+                <h4>KOTTAYAM</h4>
+                <h4>The City of Letters</h4>
+                <a href="kottayam.html">Explore Here</a>
 
-<div class="row">
-  <div class="col col-lg-3" style="margin-bottom: 20px;">
-    <a href="palakkad.html"><img src="./Images/palakkad-1.jpg" alt=""></a>
-    <h4>PALAKKAD</h4>
-    <h4>The Granary of Kerala</h4>
-    <a href="palakkad.html">Explore Here</a>
-    
-  </div>
-  <div class="col col-lg-3" style="margin-bottom: 20px;">
-    <a href="malapuram.html"><img src="./Images/malappuram.jpg" alt=""></a>
-      <h4>MALAPPURAM</h4>
-      <h4>The City of Hills</h4>
-      <a href="malapuram.html">Explore Here</a>
-      
-    </div>
-  <div class="col col-lg-3" style="margin-bottom: 20px;">
-    <a href="kozhikode.html"><img src="./Images/Kozhikode.jpg" alt=""></a>
-      <h4>KOZHIKODE</h4>
-      <h4>The City of Sweets</h4>
-      <a href="kozhikode.html">Explore Here</a>
-      
-  </div>
-  <div class="col col-lg-3" style="margin-bottom: 20px;">
-    <a href="wayanad.html"><img src="./Images/Wayanad.jpg" alt=""></a>
-      <h4>WAYANAD</h4>
-      <h4>The Green Paradise</h4>
-      <a href="wayanad.html">Explore Here</a>
-      
-  </div>
-</div>
- <!-- 3 row ends  -->
+            </div>
+            <div class="col col-lg-3" style="margin-bottom: 20px;">
+                <a href="idukki.html"> <img src="./Images/idukki.jpg" alt=""></a>
+                <h4>IDUKKI</h4>
+                <h4>The Spice Garden</h4>
+                <a href="idukki.html">Explore Here</a>
 
- <div class="row" style="justify-content: center;">
-  <div class="col col-lg-3" style="margin-bottom: 20px;" >
-    <a href="kannur.html"><img src="./Images/KANNUR.jpg" alt=""></a>
-    <h4>KANNUR</h4>
-    <h4>The City of Looms</h4>
-    <a href="kannur.html">Explore Here</a>
-    
-    
-  </div>
-  <div class="col col-lg-3" style="margin-bottom: 20px;">
-    <a href="kasargod.html"><img src="./Images/kasargod.jpg" alt=""></a>
-      <h4>KASARGOD</h4>
-      <h4>The Historical Land</h4>
-      <a href="kasargod.html">Explore Here</a>
-      
-    </div>
- 
-</div>
+            </div>
+            <div class="col col-lg-3" style="margin-bottom: 20px;">
+                <a href="ernakulam.html"><img src="./Images/ernakulam.jpg" alt=""></a>
+                <h4>ERNAKULAM</h4>
+                <h4>The Commercial Capital</h4>
+                <a href="ernakulam.html">Explore Here</a>
 
-</div>
-</div>
-<embed src="./audio/aud-20160829-wa0000-22565.mp3" type="">
-  <footer style="text-align: center; background-color: cornsilk;padding: 20px;">
-    <!-- <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div> -->
-    <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">  Customer care: <a href="">support@keraltourism.com</a> </p>
-    <ul class="list-inline">
-        <li class="list-inline-item"><a href="#">Home</a></li>
-        <li class="list-inline-item"><a href="#">Services</a></li>
-        <li class="list-inline-item"><a href="#">About</a></li>
-        <li class="list-inline-item"><a href="#">Terms</a></li>
-        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-    </ul>
-    
-    <div class="list-inline-item"><i class="fab fa-facebook-square"></i></div>
-    <div class="list-inline-item"><i class="fab fa-twitter-square"></i></div>
-    <div class="list-inline-item"><i class="fab fa-google-plus-square"></i></div>
-    <p class="copyright">Kerala Tourism © 2021</p>  
-  </footer>
+            </div>
+            <div class="col col-lg-3" style="margin-bottom: 20px;">
+                <a href="thrissur.html"><img src="./Images/Thrissur.jpg" alt=""></a>
+                <h4>THRISSUR</h4>
+                <h4>The Cultural Capital</h4>
+                <a href="thrissur.html">Explore Here</a>
+
+            </div>
+        </div>
+
+        <!-- 3 row starts -->
+
+        <div class="row">
+            <div class="col col-lg-3" style="margin-bottom: 20px;">
+                <a href="palakkad.html"><img src="./Images/palakkad-1.jpg" alt=""></a>
+                <h4>PALAKKAD</h4>
+                <h4>The Granary of Kerala</h4>
+                <a href="palakkad.html">Explore Here</a>
+
+            </div>
+            <div class="col col-lg-3" style="margin-bottom: 20px;">
+                <a href="malapuram.html"><img src="./Images/malappuram.jpg" alt=""></a>
+                <h4>MALAPPURAM</h4>
+                <h4>The City of Hills</h4>
+                <a href="malapuram.html">Explore Here</a>
+
+            </div>
+            <div class="col col-lg-3" style="margin-bottom: 20px;">
+                <a href="kozhikode.html"><img src="./Images/Kozhikode.jpg" alt=""></a>
+                <h4>KOZHIKODE</h4>
+                <h4>The City of Sweets</h4>
+                <a href="kozhikode.html">Explore Here</a>
+
+            </div>
+            <div class="col col-lg-3" style="margin-bottom: 20px;">
+                <a href="wayanad.html"><img src="./Images/Wayanad.jpg" alt=""></a>
+                <h4>WAYANAD</h4>
+                <h4>The Green Paradise</h4>
+                <a href="wayanad.html">Explore Here</a>
+
+            </div>
+        </div>
+        <!-- 3 row ends  -->
+
+        <div class="row" style="justify-content: center;">
+            <div class="col col-lg-3" style="margin-bottom: 20px;">
+                <a href="kannur.html"><img src="./Images/KANNUR.jpg" alt=""></a>
+                <h4>KANNUR</h4>
+                <h4>The City of Looms</h4>
+                <a href="kannur.html">Explore Here</a>
+
+
+            </div>
+            <div class="col col-lg-3" style="margin-bottom: 20px;">
+                <a href="kasargod.html"><img src="./Images/kasargod.jpg" alt=""></a>
+                <h4>KASARGOD</h4>
+                <h4>The Historical Land</h4>
+                <a href="kasargod.html">Explore Here</a>
+
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+    <audio autoplay id="myaudio" src="./audio/aud-20160829-wa0000-22565.mp3"></audio>
+    <footer style="text-align: center; background-color: cornsilk;padding: 20px;">
+        <!-- <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div> -->
+        <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> Customer care: <a href="">support@keraltourism.com</a> </p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Home</a></li>
+            <li class="list-inline-item"><a href="#">Services</a></li>
+            <li class="list-inline-item"><a href="#">About</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+        </ul>
+
+        <div class="list-inline-item"><i class="fab fa-facebook-square"></i></div>
+        <div class="list-inline-item"><i class="fab fa-twitter-square"></i></div>
+        <div class="list-inline-item"><i class="fab fa-google-plus-square"></i></div>
+        <p class="copyright">Kerala Tourism © 2021</p>
+    </footer>
 </body>
+
 </html>
