@@ -34,6 +34,13 @@
     height: 20px;
 }
 
+#togglePassword {
+    margin-left: 330px;
+    position: absolute;
+    cursor: pointer;
+    margin-top: -32px;
+}
+
 #togglePassword1 {
     margin-left: 420px;
     position: absolute;
