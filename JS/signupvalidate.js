@@ -118,23 +118,23 @@ inputPassword1.onkeyup = function() {
         strength.style.width = "100%";
         strength.classList.remove('bg-primary');
         strength.style.backgroundColor = "green";
-        strength.innerHTML = "100%";
+        strength.innerHTML = "Strong";
 
     } else if (score >= 75) {
         strength.style.width = "75%";
         strength.classList.remove('bg-primary');
         strength.style.backgroundColor = "orange";
-        strength.innerHTML = "75%";
+        strength.innerHTML = "Medium";
     } else if (score >= 50) {
         strength.style.width = "50%";
         strength.classList.remove('bg-primary');
-        strength.style.backgroundColor = "orange";
-        strength.innerHTML = "50%";
+        strength.style.backgroundColor = "red";
+        strength.innerHTML = "Weak";
     } else if (score >= 25) {
         strength.style.width = "25%";
         strength.classList.remove('bg-primary');
         strength.style.backgroundColor = "red";
-        strength.innerHTML = "25%";
+        strength.innerHTML = "Weak";
     } else if (score == 0) {
         strength.style.width = "0%";
 
